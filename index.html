@@ -1,40 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pamiętniczek żółtodzioba</title>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+            </ul>
+        </nav>
+        <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">HAMBURGER</button>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    </header>
+    <main>
+        <header>
+            <h1 class="mainHeader mainHeader__title--js">Jędrzej Paulus - strona domowa</h1>
+            <button class="header__button--js">Zmień treść nagłówka</button>
+            <input class="focus">
+            <img src="assets/img/JedrzejP.jpg" alt="Jędrzej Paulus foto" class="JP">
+        </header>
+        <section class="about">
+            <h2> Jestem Developer-Wannabe.</h2>
+        </section>
+        <section>
 
-    <script src="js/main.js"></script>
-  </body>
+            <div class="box">To jest div do treningu</div>
+            <h2 class="diary__header">Pamiętniczek człowieczka z frontendu.</h2>
+            <section>
+                <section>
+                    <h2>Moje hobby</h2>
+                    <ul class="hobby__list">
+                        <li>Kodowanie</li>
+                        <li>Podcastowanie</li>
+                        <li>Bieganie</li>
+                    </ul>
+                </section>
+                <section class="plan">
+                    <h2>Jak się uczę</h2>
+                    <ol>
+                        <li>Przychodzę do pracy godzinę wcześniej</li>
+                        <li>Wyłączam powiadomienia w komórce</li>
+                        <li>Robię pomodoro</li>
+                    </ol>
+                </section>
+                <p class="diary__header--js"></p>
+                </div>
+                <h3>Po co mi to IT?</h3>
+
+                <div class="grid">
+                    <section>
+                        <h3>Jak to się stało?</h3>
+                        <p>Przez długi czas pracowałem w firmie, która mnie fascynowała.<br />
+                            Potem w wyniku niefrasobliwości managementu pieniądze zostały wydane
+                            i trzeba było zwalniać. Strasznie mnie to rozczarowało, bo budowałem tę
+                            firmę od początku. W którymś momencie w firmie pojawiło się kodowanie, programowanie.
+                            Zaczęło mnie to interesować, po zwolnieniu znalazłem drugą pracę, już tylko dzięki temu,
+                            że chciałem wejść do IT oraz dlatego, że zacząłem kurs frontendu na studiach podyplomowych.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Jak się uczę?</h3>
+                        <p>Nie mam bardzo dużo czasu. Trenuję bieganie trzy razy w tygodniu, nagrywam podcasty. Nie chcę
+                            tego zarzucać,
+                            bo oba hobby powodują odprężenie i czyszczenie głowy
+                            Dlatego staram się przyjść godzinę wcześniej do pracy i wtedy się uczę.
+                            Od stycznia 2019 złamałem tę zasadę tylko 2 razy.
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="special">Nowy tydzień 3 czerwca 2019</h3>
+                        <p>
+                            Dzisiaj nowy tydzień nauki. Maciej rozwiązuje zadania z poprzedniego tygodnia i poprawia
+                            błędy, które wkradły się w w poprzednim tygodniu.
+                            W obecnym tygodniu będę się uczyć nieco projektowania.
+                        </p>
+                        <p>
+                            Uczymy się GITa. To jest świetne narzędzie. Korsan, Ty mi tak tłumaczysz, że ja wreszcie
+                            rozumem. Mamy commitować tak często jak to możliwe. Co najmniej gdy wykonujesz istotne
+                            zmiany.
+                            <strong>GIT jest git. Tak twierdzi Aniserowicz, a Korsan to podkreśla. Dobra robota
+                                GIT!</strong>
+                        </p>
+                    </section>
+            </section>
+            </div>
+            <section>
+                <p id="formular">This is the form. I am training here</p>
+                <form action="https://dev.cotenfrontend.pl" method="POST">
+                    <p>
+                        <label for="name">One (your name)</label>
+                        <input required type="text" placeholder="Add your name" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="surname">One (your surname)</label>
+                        <input type="text" value="Please add your last name" name="yourSurname" id="surname">
+                    </p>
+                    <fieldset>
+                        <legend>My inputs that is a legend</legend>
+                        <p>
+                            <label for="radio1">Option 1</label>
+                            <input type="radio" checked name="radio" id="radio1">
+                        </p>
+                        <p>
+                            <label for="radio2">Option 2</label>
+                            <input type="radio" name="radio" id="radio2">
+                        </p>
+                        <p>
+                            <label for="radio3">Option 3</label>
+                            <input type="radio" name="radio" id="radio3">
+                        </p>
+                    </fieldset>
+                    <label for="mycheckbox">Option check 1</label>
+                    <input type="checkbox" name="mycheckbox" id="mycheckbox">
+                    <br>
+
+                    <label for="mycheckbox">Option check 2</label>
+                    <input type="checkbox" checked name="mycheckbox" id="mycheckbox">
+
+                    <p>
+                        <label for="name">Your age
+                            <input type="number" placeholder="your age" name="age" id="age" value="34"></label>
+                    </p>
+                    <p>
+                        <label for="telephone">Your phone
+                            <input type="tel" placeholder="your phone" name="phone" id="telephone"></label>
+                    </p>
+                    <p>
+                        <label for="range">Your phone
+                            <input type="range" min="0" max="34" step="2" id="range"></label>
+                    </p>
+
+                    <p>
+                        <label for="password" required pattern="[a-zA-Z0-9]+">Your password
+                            <input type="password" id="password"></label>
+                    </p>
+                    <p>
+                        <label for="file">Your avatar here
+                            <input type="file" id="file"></label>
+                    </p>
+                    <p>
+                        <label>Your email here
+                            <input type="email" id="email"></label>
+                    </p>
+
+                    <p>
+                        <label for="select">Please select the answer</label>
+                        <select name="select" id="select">
+                            <option value="user selected yes">Yes</option>
+                            <option value="user selected yes">No</option>
+                            <option value="user selected yes">Maybe</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="textarea">What is the answer to life, universe and everthing?</label>
+                        <textarea id="textarea" name="textarea"> </textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send the form">
+
+                    </p>
+                </form>
+            </section>
+            <section class="glossary">
+                <dl>
+                    <dt>CSS</dt>
+                    <dd>Style, czyli CSS to sposób stylowania tego, co widzisz.</dd>
+                    <dt>HTML</dt>
+                    <dd>Szkielet strony, który trzyma ją w kupie.</dd>
+                    <dl>JavaScript</dl>
+                    <dt>ES6</dt>
+                    <dd>Język, który rusza wszystko na stronie</dd>
+                </dl>
+            </section>
+            <section class="table">
+                <table>
+                    <caption>Cena za wodę strukturyzowaną</caption>
+                    <thead>
+                        <tr>
+                            <th>Imię i nazwisko</th>
+                            <th>Cena</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jędrzej Paulus</td>
+                            <td>Pisiont groszy</td>
+                            <td>Trzynastego w piątek</td>
+                        </tr>
+                        <tr>
+                            <td>Doktor Zięba</td>
+                            <td>Pisiont groszy i złoty</td>
+                            <td>Czternastego w piątek</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <footer>
+                Strona domowa Jędrzeja Paulusa. Treści zawarte tutaj są efektem szkolenia "WTF: Co ten frontend"
+
+            </footer>
+    </main>
+    <script src="js/main.js">
+    </script>
+</body>
+
 </html>
