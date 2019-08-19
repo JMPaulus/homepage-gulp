@@ -10,16 +10,16 @@ html {
 
 body {
   background: #fefefe;
-  font-family: "Lato"; }
+  font-family: 'Times New Roman', Times, serif; }
 
 .mainHeader {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: aqua;
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: tomato;
   font-family: "Roboto Condensed"; }
 
 .mainHeader--red {
-  color: darkred; }
+  color: blue; }
 
 .site-header {
   min-height: 20px; }
