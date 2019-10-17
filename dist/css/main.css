@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Condensed&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -10,13 +12,13 @@ html {
 
 body {
   background: #fefefe;
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: 'Montserrat'; }
 
 .mainHeader {
   color: green;
   font-family: 'Times New Roman', Times, serif;
   background-color: tomato;
-  font-family: "Roboto Condensed"; }
+  font-family: "Montserrat"; }
 
 .mainHeader--red {
   color: blue; }
@@ -53,10 +55,12 @@ p {
   margin-right: 5px;
   height: 16px;
   width: 16px;
-  background: violet; }
+  background: violet;
+  font-family: 'Roboto Condensed'; }
 
 h3 {
-  color: #4684e9; }
+  color: #4684e9;
+  font-family: 'Roboto Condesed'; }
 
 h3:not(.special) {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
