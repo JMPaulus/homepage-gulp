@@ -12,9 +12,8 @@ body {
 }
 
 .mainHeader {
-    color: green;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
-    background-color: tomato;
     font-family: "Montserrat"
 }
 
@@ -37,6 +36,7 @@ p {
     color: #00487C;
     font-size: 32px;
     clear: left;
+    font-family:'Roboto condensed';
 }
 
 .diary__header::before {
