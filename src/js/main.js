@@ -1,3 +1,4 @@
+import { loadavg } from "os";
 
 
 
@@ -122,3 +123,38 @@ const deathStar = {
 // }
 
 // welcome('Jędrzej', 34);
+
+// console.log(document.cookie);
+// document.cookie = "testoweCiastko = wartosć";
+// console.log(document.cookie);
+
+// const person = {
+//   name: "jedrzej",
+//   age: 34,
+//   occupation: "podcaster" 
+// }
+
+// const jsonPerson = JSON.stringify(person);
+
+// console.log(jsonPerson);
+
+
+// localStorage.setItem('person', jsonPerson);
+
+// const personStringify = localStorage.getItem('person');
+
+// const newPerson = JSON.parse(personStringify);
+
+// console.log(newPerson);
+
+// //localStorage.removeItem('person');
+
+const focusInput = document.querySelector('.focus--js');
+
+if(localStorage.getItem('focusInput')){
+  focusInput.value = localStorage.getItem('focusInput');
+}
+
+focusInput.addEventListener('keyup',(e) =>{
+  localStorage.setItem('focusInput', e.target.value);
+});
